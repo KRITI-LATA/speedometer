@@ -1,0 +1,47 @@
+/* Write your CSS here */
+.container {
+  background-color: #07080c;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.heading {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 50px;
+  font-weight: 500;
+}
+.speed-image {
+  height: 300px;
+  width: 800px;
+}
+.heading-text {
+  color: #ffffff;
+  font-size: 40px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+.para-text {
+  color: #cbd5e1;
+  font-family: 'Roboto';
+  font-size: 13px;
+}
+.acc-button {
+  background-color: #0b69ff;
+  color: #ffffff;
+  padding: 13px;
+  border-color: #0b69ff;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+.app-button {
+  background-color: #07080c;
+  color: #94a3b8;
+  padding: 13px;
+  border-color: #94a3b8;
+  border-radius: 8px;
+  margin-right: 10px;
+}
