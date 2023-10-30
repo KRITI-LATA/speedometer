@@ -7,21 +7,22 @@ class Speedometer extends Component {
   state = {speed: 0}
 
   increaseAccelerator = () => {
-    const {speed} = this.speed
+    const {speed} = this.state
     if (speed < 200) {
       this.setState(prevState => ({speed: prevState.speed + 10}))
     }
   }
 
   decreaseBrake = () => {
-    const {speed} = this.speed
-    if (speed === 200) {
+    const {speed} = this.state
+    if (speed <= 200) {
       this.setState(prevState => ({speed: prevState.speed - 10}))
     }
   }
 
   render() {
-    const {speed} = this.speed
+    const {speed} = this.state
+
     return (
       <div className="container">
         <h1 className="heading">SPEEDOMETER</h1>
@@ -36,14 +37,14 @@ class Speedometer extends Component {
         <p className="para-text">Min Limit is 0mph, Max Limit is 200mph</p>
         <div>
           <button
-            type="button"
+            type="submit"
             className="acc-button"
             onClick={this.increaseAccelerator}
           >
             Accelerate
           </button>
           <button
-            type="button"
+            type="submit"
             className="app-button"
             onClick={this.decreaseBrake}
           >
